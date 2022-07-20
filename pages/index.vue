@@ -112,7 +112,9 @@
       </v-container>
     </section>
     <section id="skills" class="accent d-flex align-center">
-      <v-container></v-container>
+      <v-container>
+        <h1 class="white--text">Skills</h1>
+      </v-container>
     </section>
   </div>
 </template>
