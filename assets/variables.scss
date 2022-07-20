@@ -1,0 +1,54 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+$font-family: 'Poppins', sans-serif;
+.v-application {
+  font-family: $font-family !important;
+  [class*='text-'] {
+    font-family: $font-family !important;
+  }
+}
+
+.container {
+  max-width: 1250px !important;
+}
+
+$primary: #f54212;
+$accent: #303134;
+$secondary: #45474a;
+$info: #a7afbd;
+
+.fw-3 {
+  font-weight: 300;
+}
+.fw-4 {
+  font-weight: 400;
+}
+.fw-6 {
+  font-weight: 600;
+}
+.fw-7 {
+  font-weight: 700;
+}
+.fw-9 {
+  font-weight: 900;
+}
+.h-100 {
+  height: 100% !important;
+}
+.vh-100 {
+  height: 100vh !important;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 36px;
+}
