@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero-section d-flex align-center">
+    <section class="hero-section py-16 full-height d-flex align-center">
       <v-container class="position-relative">
         <v-row align="center">
           <v-col cols="6">
@@ -58,7 +58,7 @@
         </a>
       </v-container>
     </section>
-    <section id="work" class="secondary d-flex align-center">
+    <section id="work" class="secondary py-16 full-height d-flex align-center">
       <v-container>
         <v-row align="center">
           <v-col cols="12">
@@ -81,7 +81,8 @@
                   <v-img
                     :src="`/images/recent/nft${x}.png`"
                     class="dp pa-5"
-                    height="550"
+                    height="450"
+                    cover
                   >
                     <a
                       href="#"
@@ -98,7 +99,7 @@
                   </v-img>
                 </div>
               </VueSlickCarousel>
-              <div class="controller mt-6 d-flex justify-end">
+              <div class="controller d-flex justify-end mt-6">
                 <v-btn color="#fff" icon class="mr-2" @click="showPrev">
                   <v-icon>mdi-arrow-left</v-icon>
                 </v-btn>
@@ -111,11 +112,29 @@
         </v-row>
       </v-container>
     </section>
-    <section id="skills" class="accent d-flex align-center">
+    <section id="skills" class="accent" style="padding: 100px 0">
       <v-container>
-        <h1 class="white--text">Skills</h1>
+        <h3 class="primary--text mb-0 fw-4">Skills</h3>
+        <h1 class="white--text">What I Do for Clients</h1>
+        <div class="mt-5">
+          <div class="row">
+            <div v-for="x in 4" :key="x" class="col-3">
+              <h3 class="fw-4 info--text mb-2">
+                Vuejs
+                <v-icon size="14" color="info">mdi-arrow-bottom-right</v-icon>
+              </h3>
+              <h5 class="fw-4 white--text mb-1">Web Development</h5>
+              <h5 class="fw-4 white--text mb-1">Digital Marketing</h5>
+              <h5 class="fw-4 white--text mb-1">Web Development</h5>
+              <h5 class="fw-4 white--text mb-1">Digital Marketing</h5>
+              <h5 class="fw-4 white--text mb-1">Web Development</h5>
+              <h5 class="fw-4 white--text mb-1">Digital Marketing</h5>
+            </div>
+          </div>
+        </div>
       </v-container>
     </section>
+    <section class="full-height secondary"></section>
   </div>
 </template>
 
@@ -151,7 +170,7 @@ export default {
 }
 </script>
 <style lang="scss">
-section {
+section.full-height {
   height: calc(100vh - 70px);
   min-height: 700px;
 }
@@ -230,5 +249,9 @@ section {
       opacity: 0.9;
     }
   }
+}
+
+.v-responsive__sizer {
+  padding: 0 !important;
 }
 </style>
