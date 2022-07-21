@@ -172,7 +172,7 @@ export default {
 <style lang="scss">
 section.full-height {
   height: calc(100vh - 70px);
-  min-height: 700px;
+  min-height: 800px;
 }
 
 .hero-text {
