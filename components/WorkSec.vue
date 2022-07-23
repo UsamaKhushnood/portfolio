@@ -93,6 +93,39 @@ export default {
     return {
       projects: [
         {
+          title: 'Cy-B3lla',
+          url: 'https://cy-b3lle.netlify.app/',
+          logo: null,
+          cover: 'nft1.png',
+          type: 'Website',
+          stack: ['Vue', 'Nuxt', 'NFT'],
+        },
+
+        {
+          title: 'AngeliCamanzo',
+          url: 'https://angelicamanzo.com/',
+          logo: null,
+          cover: 'angelica.jpg',
+          type: 'Website',
+          stack: ['Wordpress', 'Divi', 'Custom Design'],
+        },
+        {
+          title: 'UncorkedCommerce',
+          url: 'http://uncorkedcommerce.com/',
+          logo: null,
+          cover: 'uncorked.png',
+          type: 'Website',
+          stack: ['Wordpress'],
+        },
+        {
+          title: 'Mandelli',
+          url: 'https://mandelli.it/',
+          logo: null,
+          cover: 'mandelli.jpg',
+          type: 'Website',
+          stack: ['Wordpress'],
+        },
+        {
           title: 'SwopnoBazar',
           url: 'https://swopnobazar.com',
           logo: 'swopnobazar.png',
@@ -101,36 +134,21 @@ export default {
           stack: ['Wordpress'],
         },
         {
+          title: 'W-Shop',
+          url: 'https://w-shop.co/',
+          logo: 'wshop.png',
+          cover: null,
+          type: 'Website',
+          stack: ['Wordpress'],
+        },
+
+        {
           title: 'Braap',
           url: 'https://braap.io',
           logo: null,
           cover: 'braap.png',
           type: 'Website',
           stack: ['Vue', 'Nuxt'],
-        },
-        {
-          title: 'Cy-B3lla',
-          url: 'https://cy-b3lle.netlify.app/',
-          logo: null,
-          cover: 'nft1.png',
-          type: 'Website',
-          stack: ['Vue', 'Nuxt', 'NFT'],
-        },
-        {
-          title: 'UncorkedCommerce',
-          url: 'http://uncorkedcommerce.com/',
-          logo: null,
-          cover: 'uncorked.png',
-          type: 'Website',
-          stack: ['Wordpress'],
-        },
-        {
-          title: 'UncorkedCommerce',
-          url: 'http://uncorkedcommerce.com/',
-          logo: null,
-          cover: 'uncorked.png',
-          type: 'Website',
-          stack: ['Wordpress'],
         },
       ],
       settings: {
