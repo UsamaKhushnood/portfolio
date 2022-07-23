@@ -15,6 +15,8 @@ $font-family: 'Poppins', sans-serif;
 }
 
 $primary: #f54212;
+$primary-lighten-1: #f542123d;
+$primary-lighten-2: #f5421230;
 $accent: #303134;
 $secondary: #45474a;
 $info: #a7afbd;
@@ -51,4 +53,11 @@ $info: #a7afbd;
 
 h1 {
   font-size: 36px;
+}
+
+.pt-100 {
+  padding-bottom: 100px;
+}
+.pb-100 {
+  padding-bottom: 100px;
 }

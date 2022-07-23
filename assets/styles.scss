@@ -1,10 +1,15 @@
 @import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
 @import 'vue-slick-carousel/dist/vue-slick-carousel.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .theme--dark.v-application {
   background-color: $accent !important;
 }
 
-html {
-  scroll-behavior: smooth;
+section.full-height {
+  height: calc(100vh - 70px);
+  min-height: 800px;
 }

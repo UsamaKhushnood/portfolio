@@ -12,11 +12,21 @@
 
     <v-spacer></v-spacer>
     <div class="d-flex align-self-center">
-      <v-btn text tile class="text-capitalize"> Home </v-btn>
-      <v-btn text tile class="text-capitalize"> Work </v-btn>
-      <v-btn text tile class="text-capitalize"> Skills </v-btn>
-      <v-btn text tile class="text-capitalize"> About </v-btn>
-      <v-btn text tile class="text-capitalize"> Contact </v-btn>
+      <a href="#home" class="white--text decoration-none">
+        <v-btn text tile class="text-capitalize"> Home </v-btn></a
+      >
+      <a href="#work" class="white--text decoration-none">
+        <v-btn text tile class="text-capitalize"> Work </v-btn></a
+      >
+      <a href="#skills" class="white--text decoration-none">
+        <v-btn text tile class="text-capitalize"> Skills </v-btn></a
+      >
+      <a href="#testimonials" class="white--text decoration-none">
+        <v-btn text tile class="text-capitalize"> Reviews </v-btn></a
+      >
+      <a href="#contact" class="white--text decoration-none">
+        <v-btn text tile class="text-capitalize"> Contact </v-btn></a
+      >
     </div>
   </v-app-bar>
 </template>
