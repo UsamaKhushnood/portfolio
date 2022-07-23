@@ -12,26 +12,23 @@
           </div>
           <div class="col-6">
             <VueSlickCarousel v-bind="settings" ref="carousel">
-              <div v-for="x in 5" :key="x" class="testimonail">
+              <div v-for="(review, x) in reviews" :key="x" class="testimonail">
                 <h4 class="fw-4">
                   <span>"</span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                  voluptate laudantium accusamus laboriosam, minus quasi omnis
-                  aut recusandae vero. Non omnis at libero iste similique
-                  inventore suscipit iure enim.
+                  {{ review.review }}
                   <span>"</span>
                 </h4>
                 <h3 class="fw-6 text-center primary--text mt-5">
-                  Client's Name
+                  {{ review.client }}
                 </h3>
 
                 <h6 class="fw-4 text-center">
                   <a
                     class="decoration-none white--text"
-                    href="https://www.upwork.com/freelancers/usamakhushnood2"
+                    :href="review.url"
                     target="blank"
                   >
-                    Upwork</a
+                    {{ review.source }}</a
                   >
                   <v-icon size="14">mdi-arrow-top-right</v-icon>
                 </h6>
@@ -57,12 +54,70 @@ export default {
   components: { VueSlickCarousel },
   data() {
     return {
+      reviews: [
+        {
+          review:
+            'Sam completed the job quickly and efficiently, and even came back after the contract was complete to help me with a few other things. Will definitely hire again!',
+          client: 'Mark McKinney',
+          source: 'Upwork',
+          url: 'https://www.upwork.com/freelancers/~012416bce059f36249',
+        },
+        {
+          review:
+            'He is good in programming. Always available and responsible guy. Will hire again.',
+          client: 'Mark McKinney',
+          source: 'Upwork',
+          url: 'https://www.upwork.com/freelancers/~012416bce059f36249',
+        },
+        {
+          review: 'Well Done Perfect and on Time this guy is Dr. Vue',
+          client: 'Zoukar Sulaiman',
+          source: 'Upwork',
+          url: 'https://www.upwork.com/freelancers/~012416bce059f36249',
+        },
+        {
+          review: 'Well Done on Time and fast and Clean',
+          client: 'Zoukar Sulaiman',
+          source: 'Upwork',
+          url: 'https://www.upwork.com/freelancers/~012416bce059f36249',
+        },
+        {
+          review:
+            'Usama did great, he helped me with everything I needed and worked with me until everything was perfect. Thank you.',
+          client: 'Ania',
+          source: 'Upwork',
+          url: 'https://www.upwork.com/freelancers/~012416bce059f36249',
+        },
+        {
+          review:
+            'He is experienced developer and enjoyed working with him. Usama has completed his task in a smart way and delivered before deadlines. I really appreciate his work and way of communicating. Thank you Usama. Will keep working together',
+          client: 'Summit',
+          source: 'Upwork',
+          url: 'https://www.upwork.com/freelancers/~012416bce059f36249',
+        },
+        {
+          review:
+            'Usama and Rowshan have done a great job! Really liked their proactive attitude, they are always eager to learn and execute fast. We are looking forward to continuously working with them. Best of luck to the Team!! Great job, guys',
+          client: 'Rohan',
+          source: 'Upwork',
+          url: 'https://www.upwork.com/freelancers/~012416bce059f36249',
+        },
+        {
+          review:
+            'Good communication, fast response. Serious approach. Gave his personal recommendations while project was in "work in progress" state. He is a very skilled and finished his job as requested.',
+          client: 'Daniel',
+          source: 'Upwork',
+          url: 'https://www.upwork.com/freelancers/~012416bce059f36249',
+        },
+      ],
       settings: {
         dots: false,
         arrows: false,
         edgeFriction: 0.35,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
       },

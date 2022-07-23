@@ -35,7 +35,7 @@
                   >
                     <img
                       class="projectLogo"
-                      src="/images/projects/swopnobazar.png"
+                      :src="`/images/projects/${project.logo}`"
                       width="100px"
                     />
                     <div class="mt-5">
@@ -160,6 +160,9 @@ export default {
         slidesToShow: 3,
         slidesToScroll: 1,
         touchThreshold: 5,
+        autoplay: true,
+
+        autoplaySpeed: 2000,
       },
     }
   },
