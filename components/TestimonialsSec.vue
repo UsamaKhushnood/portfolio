@@ -5,12 +5,12 @@
       <h1 class="white--text">What Clients Say About Me</h1>
       <div class="testitmonials mt-16">
         <div class="row">
-          <div class="col-3 d-flex align-center justify-end">
+          <div class="col-3 d-none d-md-flex align-center justify-end">
             <v-btn icon x-large color="primary" @click="showPrev">
               <v-icon>mdi-arrow-left</v-icon>
             </v-btn>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <VueSlickCarousel v-bind="settings" ref="carousel">
               <div v-for="(review, x) in reviews" :key="x" class="testimonail">
                 <h4 class="fw-4">
@@ -35,7 +35,7 @@
               </div>
             </VueSlickCarousel>
           </div>
-          <div class="col-3 d-flex align-center justify-sta4rt">
+          <div class="col-3 d-none d-md-flex align-center justify-sta4rt">
             <v-btn icon x-large color="primary" @click="showNext">
               <v-icon>mdi-arrow-right</v-icon>
             </v-btn>

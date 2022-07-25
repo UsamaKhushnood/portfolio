@@ -1,11 +1,18 @@
 <template>
   <section id="home" class="hero-section full-height d-flex align-center">
     <v-container class="position-relative">
-      <v-row align="center">
-        <v-col cols="6">
-          <h3 class="primary--text mb-0 fw-6">Usama Khushnood</h3>
-          <h1 class="hero-text mb-10">Expert Vuejs Developer.</h1>
-          <div class="mb-10">
+      <v-row
+        align="center"
+        class="flex-column-reverse flex-md-row py-16 py-md-0"
+      >
+        <v-col cols="12" md="6">
+          <h3 class="primary--text mb-0 fw-6 text-center text-md-left">
+            Usama Khushnood
+          </h3>
+          <h1 class="hero-text mb-10 text-center text-md-left">
+            Expert Vuejs Developer.
+          </h1>
+          <div class="mb-10 d-none d-md-flex">
             <ul>
               <li class="mb-1">
                 <h3 class="fw-4">Web Development</h3>
@@ -18,9 +25,9 @@
               </li>
             </ul>
           </div>
-          <v-row>
-            <v-col cols="4">
-              <div class="d-flex align-center">
+          <v-row class="flex-md-row flex-column">
+            <v-col cols="12" md="4">
+              <div class="d-flex align-center justify-center justify-md-start">
                 <h1 class="hero-text">3+</h1>
                 <h4 class="fw-4 info--text ml-3">
                   Years of <br />
@@ -28,8 +35,8 @@
                 </h4>
               </div>
             </v-col>
-            <v-col cols="6">
-              <div class="d-flex align-center">
+            <v-col cols="12" md="6">
+              <div class="d-flex align-center justify-center justify-md-start">
                 <h1 class="hero-text">50+</h1>
                 <h4 class="fw-4 info--text ml-3">
                   Happy <br />
@@ -38,8 +45,11 @@
               </div>
             </v-col>
           </v-row>
+          <a href="#contact" class="w-100 d-flex d-md-none">
+            <v-btn block color="primary" class="mt-10">Contact</v-btn>
+          </a>
         </v-col>
-        <v-col cols="6" class="d-flex justify-center">
+        <v-col cols="12" md="6" class="d-md-flex d-none justify-center">
           <div class="hero-img-wrapper">
             <div class="vector-background"></div>
             <v-img
@@ -52,7 +62,10 @@
           </div>
         </v-col>
       </v-row>
-      <a class="decoration-none levitating-arrow" href="#work">
+      <a
+        class="decoration-none levitating-arrow d-none d-md-block"
+        href="#contact"
+      >
         <img src="/icons/arrow-down.png" />
         <!-- <v-icon color="#fff" size="50px"> mdi-arrow-down </v-icon> -->
       </a>

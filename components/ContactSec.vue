@@ -15,8 +15,8 @@
     <v-container>
       <h3 class="primary--text mb-0 fw-4">Contact</h3>
       <h1 class="white--text">Looking forward to hear from you.</h1>
-      <div class="row mt-16">
-        <div class="col-6">
+      <div class="row mt-md-16 mt-5 flex-column-reverse flex-md-row">
+        <div class="col-md-6 col-12 mt-md-0 mt-5">
           <div class="social-media-links">
             <a
               href="mailto:usamakhushnood4@gmail.com"
@@ -60,7 +60,7 @@
             </a>
           </div>
         </div>
-        <div class="col-6 position-relative">
+        <div class="col-md-6 col-12 position-relative">
           <form ref="form" @submit.prevent="sendEmail">
             <div class="row">
               <div class="col-12 pb-0 col-md-6">

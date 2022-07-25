@@ -9,7 +9,9 @@ html {
   background-color: $accent !important;
 }
 
-section.full-height {
-  height: calc(100vh - 70px);
-  min-height: 800px;
+@media screen and (min-width: 600px) {
+  section.full-height {
+    height: calc(100vh - 70px);
+    min-height: 800px;
+  }
 }
