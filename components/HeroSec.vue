@@ -45,8 +45,10 @@
               </div>
             </v-col>
           </v-row>
-          <a href="#contact" class="w-100 d-flex d-md-none">
-            <v-btn block color="primary" class="mt-10">Contact</v-btn>
+          <a href="#contact" class="w-100 d-flex d-md-none decoration-none">
+            <v-btn block text color="primary" class="mt-10">
+              <h3 class="fw-4">Contact Me</h3>
+            </v-btn>
           </a>
         </v-col>
         <v-col cols="12" md="6" class="d-md-flex d-none justify-center">
