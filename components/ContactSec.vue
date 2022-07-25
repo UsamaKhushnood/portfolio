@@ -51,7 +51,7 @@
               <span class="ml-2"> Add Me on Skype </span>
             </a>
             <a
-              href="https://wa.me/+9233142788863"
+              href="https://wa.me/+923314278863"
               class="social-link decoration-none white--text d-flex align-center py-3"
               target="blank"
             >
