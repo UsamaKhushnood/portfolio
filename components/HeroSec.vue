@@ -10,7 +10,8 @@
             Usama Khushnood
           </h3>
           <h1 class="hero-text mb-10 text-center text-md-left">
-            Expert Vuejs Developer.
+            <span v-if="$route.name == 'wordpress'"> WordPress Expert </span>
+            <span v-else> Expert Vuejs Developer. </span>
           </h1>
           <div class="mb-10 d-none d-md-flex">
             <ul>

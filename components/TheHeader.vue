@@ -8,7 +8,9 @@
     app
     class="px-md-5 px-0"
   >
-    <v-toolbar-title class="fw-4">Capslock Studio</v-toolbar-title>
+    <v-toolbar-title class="fw-4">
+      <a href="#" class="decoration-none white--text"> Capslock Studio </a>
+    </v-toolbar-title>
 
     <v-spacer></v-spacer>
     <div class="d-flex align-self-center nav-md">

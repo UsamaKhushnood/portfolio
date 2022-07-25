@@ -161,7 +161,7 @@ export default {
         slidesToScroll: 1,
         touchThreshold: 5,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 5000,
         responsive: [
           {
             breakpoint: 560,
