@@ -164,7 +164,7 @@ export default {
         autoplaySpeed: 5000,
         responsive: [
           {
-            breakpoint: 560,
+            breakpoint: 600,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
