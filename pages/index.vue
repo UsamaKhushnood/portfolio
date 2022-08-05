@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroSec />
-    <!-- <WorkSec /> -->
+    <WorkSec />
     <SkillsSec />
     <TestimonialsSec />
     <ContactSec />
