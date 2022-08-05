@@ -1,9 +1,9 @@
 <template>
   <div>
     <HeroSec />
-    <WorkSec />
+    <!-- <WorkSec /> -->
     <SkillsSec />
-    <TestimonialsSec />
+    <!-- <TestimonialsSec /> -->
     <ContactSec />
   </div>
 </template>
