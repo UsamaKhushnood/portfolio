@@ -1,55 +1,49 @@
 <template>
-  <client-only>
-    <section id="testimonials" class="pb-100 pt-16 accent">
-      <v-container>
-        <h3 class="primary--text mb-0 fw-4">Reviews</h3>
-        <h1 class="white--text">What Clients Say About Me</h1>
-        <div class="testitmonials mt-16">
-          <div class="row">
-            <div class="col-3 d-none d-md-flex align-center justify-end">
-              <v-btn icon x-large color="primary" @click="showPrev">
-                <v-icon>mdi-arrow-left</v-icon>
-              </v-btn>
-            </div>
-            <div class="col-12 col-md-6">
-              <VueSlickCarousel v-bind="settings" ref="carousel">
-                <div
-                  v-for="(review, x) in reviews"
-                  :key="x"
-                  class="testimonail"
-                >
-                  <h4 class="fw-4">
-                    <span>"</span>
-                    {{ review.review }}
-                    <span>"</span>
-                  </h4>
-                  <h3 class="fw-6 text-center primary--text mt-5">
-                    {{ review.client }}
-                  </h3>
+  <section id="testimonials" class="pb-100 pt-16 accent">
+    <v-container>
+      <h3 class="primary--text mb-0 fw-4">Reviews</h3>
+      <h1 class="white--text">What Clients Say About Me</h1>
+      <div class="testitmonials mt-16">
+        <div class="row">
+          <div class="col-3 d-none d-md-flex align-center justify-end">
+            <v-btn icon x-large color="primary" @click="showPrev">
+              <v-icon>mdi-arrow-left</v-icon>
+            </v-btn>
+          </div>
+          <div class="col-12 col-md-6">
+            <VueSlickCarousel v-bind="settings" ref="carousel">
+              <div v-for="(review, x) in reviews" :key="x" class="testimonail">
+                <h4 class="fw-4">
+                  <span>"</span>
+                  {{ review.review }}
+                  <span>"</span>
+                </h4>
+                <h3 class="fw-6 text-center primary--text mt-5">
+                  {{ review.client }}
+                </h3>
 
-                  <h6 class="fw-4 text-center">
-                    <a
-                      class="decoration-none white--text"
-                      :href="review.url"
-                      target="blank"
-                    >
-                      {{ review.source }}</a
-                    >
-                    <v-icon size="14">mdi-arrow-top-right</v-icon>
-                  </h6>
-                </div>
-              </VueSlickCarousel>
-            </div>
-            <div class="col-3 d-none d-md-flex align-center justify-sta4rt">
-              <v-btn icon x-large color="primary" @click="showNext">
-                <v-icon>mdi-arrow-right</v-icon>
-              </v-btn>
-            </div>
+                <h6 class="fw-4 text-center">
+                  <a
+                    class="decoration-none white--text"
+                    :href="review.url"
+                    target="blank"
+                  >
+                    {{ review.source }}</a
+                  >
+                  <v-icon size="14">mdi-arrow-top-right</v-icon>
+                </h6>
+              </div>
+            </VueSlickCarousel>
+          </div>
+          <div class="col-3 d-none d-md-flex align-center justify-sta4rt">
+            <v-btn icon x-large color="primary" @click="showNext">
+              <v-icon>mdi-arrow-right</v-icon>
+            </v-btn>
           </div>
         </div>
-      </v-container>
-    </section>
-  </client-only>
+      </div>
+    </v-container>
+  </section>
 </template>
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
