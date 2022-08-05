@@ -114,9 +114,10 @@ export default {
         dots: false,
         arrows: false,
         edgeFriction: 0.35,
+        speed: 500,
         autoplay: true,
-        speed: 2000,
         autoplaySpeed: 2000,
+        adaptiveHeight: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -143,5 +144,10 @@ export default {
   padding: 26px;
   border-radius: 10px;
   background: $primary-lighten-2;
+}
+
+.slick-slide > div {
+  height: 100% !important;
+  margin: 0 5px;
 }
 </style>

@@ -48,7 +48,6 @@
                     target="blank"
                     class="secondary info-panel pa-10 h-100 flex-column justify-space-between"
                   >
-                    <!-- <div> -->
                     <v-icon size="45">mdi-arrow-top-right</v-icon>
                     <div class="project-details">
                       <h3 class="fw-6 white--text">{{ project.title }}</h3>
@@ -63,7 +62,6 @@
                       </div>
                       <h5 class="fw-4 info--text">Click to Open Website</h5>
                     </div>
-                    <!-- </div> -->
                   </a>
                 </v-img>
               </div>
