@@ -3,7 +3,7 @@
     <HeroSec />
     <!-- <WorkSec /> -->
     <SkillsSec />
-    <!-- <TestimonialsSec /> -->
+    <TestimonialsSec />
     <ContactSec />
   </div>
 </template>
